@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBinding_ViewModel", "DataBinding_ViewModel\DataBinding_ViewModel.csproj", "{D1B9B480-9F89-48B6-AEAF-31D5406F54A4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D1B9B480-9F89-48B6-AEAF-31D5406F54A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1B9B480-9F89-48B6-AEAF-31D5406F54A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1B9B480-9F89-48B6-AEAF-31D5406F54A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1B9B480-9F89-48B6-AEAF-31D5406F54A4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D829904A-F7FF-4B3C-92C0-A6D6B588F8B8}
+	EndGlobalSection
+EndGlobal

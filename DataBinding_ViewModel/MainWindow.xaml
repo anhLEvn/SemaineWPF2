@@ -1,0 +1,32 @@
+﻿<Window x:Class="DataBinding_ViewModel.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DataBinding_ViewModel"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="Beige" RenderTransformOrigin="0.507,0.474" Margin="-106,-275,-313.667,-0.333">
+
+        <Label Content="Nom" FontSize="16" Margin="35,36,633.333,344.667"/>
+        <Label Content="Prénom" FontSize="16" Margin="35,81,633.333,300.667"/>
+        <Label Content="Mail"  HorizontalAlignment="Left" Margin="35,145,0,0" VerticalAlignment="Top" Width="144"/>
+        <TextBox HorizontalAlignment="Left" Height="39" Margin="208,81,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="283"/>
+        <TextBox HorizontalAlignment="Left" Height="26" Margin="208,36,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="163"/>
+        <TextBox HorizontalAlignment="Left" Height="49" Margin="208,145,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="335"/>
+        <Button Content="Enregister" HorizontalAlignment="Left" Height="49" Margin="605,145,0,0" VerticalAlignment="Top" Width="114" />
+        <ListView Margin="0,225,0.333,-0.333" Background="DarkCyan" ItemsSource ="{Binding Path= ListeAdherents}" BorderBrush="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}">
+            
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header ="Numéro" Width="80" DisplayMemberBinding="{Binding Path= Id}"/>
+                    <GridViewColumn Header ="Nom" Width="200" DisplayMemberBinding="{Binding Path=Nom}"/>
+                    <GridViewColumn Header ="Prénom" Width="200" DisplayMemberBinding="{Binding Path=Prenom}"/>
+                    <GridViewColumn Header ="Mail" Width="auto" DisplayMemberBinding="{Binding Path= Mail}"/>
+                </GridView>
+            </ListView.View>
+
+        </ListView>
+        <!-- on veut lier le slider à la vaeur saisie dans textBoxC-->
+    </Grid>
+</Window>
